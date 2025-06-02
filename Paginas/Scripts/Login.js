@@ -1,5 +1,5 @@
 ﻿async function Ingresar() {
-    let BaseURL = "http://inmobiliaria.runasp.net/";//"http://localhost:44352";
+    let BaseURL = "http://inmobiliaria.runasp.net/"; //"http://localhost:44352";
     let URL = BaseURL + "/api/Login/Ingresar";
     const login = new Login($("#txtUsuario").val(), $("#txtClave").val());
     const Respuesta = await EjecutarComandoServicioRpta("POST", URL, login);
@@ -29,7 +29,9 @@
             $("#dvMensaje").html(Respuesta[0].Mensaje);
             document.cookie = "Perfil=" + Respuesta[0].Perfil;
             document.cookie = "Usuario=" + Respuesta[0].Usuario;
-            window.location.href = Respuesta[0].PaginaInicio;
+            window.location.assign("http://localhost:44377/Paginas/Empleado.html");
+
+
         }
     }
 }

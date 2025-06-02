@@ -85,7 +85,7 @@ async function EjecutarComandoServicioRptaAuth(Metodo, URLServicio, Objeto) {
 async function ConsultarServicio(URLServicio) {
     //Para invocar el servicio, vamos a utilizar el método fetch de javascript, el cual me permite invocar una función en un servidor
     try {
-        
+
         const Respuesta = await fetch(URLServicio,
             {
                 method: "GET",
@@ -246,7 +246,6 @@ async function LlenarTablaXServiciosAuth(URLServicio, TablaLlenar) {
     }
     catch (error) {
         //Se presenta la respuesta en el div mensaje
-        $("#dvMensaje").html(error);
     }
 }
 function getCookie(cname) {
