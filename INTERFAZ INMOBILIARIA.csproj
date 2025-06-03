@@ -175,6 +175,7 @@
     <Content Include="Paginas\Scripts\MenuLateral.js" />
     <Content Include="Paginas\Scripts\Pagina1.js" />
     <Content Include="Paginas\Scripts\Pagina2.js" />
+    <Content Include="Paginas\Scripts\Visita.js" />
     <Content Include="Paginas\TipoVisita.html" />
     <Content Include="Paginas\Visita.html" />
     <Content Include="Scripts\adminlte.js" />

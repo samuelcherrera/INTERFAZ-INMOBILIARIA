@@ -36,7 +36,7 @@ async function Consultar() {
         $("#txtsede_id").val(empleado.sede_id);
         $("#txtusuario").val(empleado.usuario);
         $("#txtclave").val(empleado.clave);
-       
+
     }
     else {
         $("#dvMensaje").html("El empleado no está en la base de datos");
@@ -54,7 +54,7 @@ async function Consultar() {
     }
 }
 class Empleado {
-    constructor(id_empleado,identificacion, nombres,apellidos, telefono, email, direccion, cargo, fecha_ingreso,salario,sede_id, usuario, clave) {
+    constructor(id_empleado, identificacion, nombres, apellidos, telefono, email, direccion, cargo, fecha_ingreso, salario, sede_id, usuario, clave) {
         this.id_empleado = id_empleado;
         this.identificacion = identificacion;
         this.nombres = nombres;
