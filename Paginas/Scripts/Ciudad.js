@@ -20,8 +20,8 @@ async function EjecutarComando(Metodo, Funcion) {
 }
 
 async function Consultar() {
-    let nombre = $("#txtnombre").val();
-    let URL = BaseURL + "api/Ciudades/ConsultarXNombre?nombre=" + nombre;
+    let nombre = $("#txtid_ciudad").val();
+    let URL = BaseURL + "api/Ciudades/ConsultarXId?id=" + nombre;
     const ciudad = await ConsultarServicioAuth(URL);
     if (ciudad != null) {
         $("#txtid_ciudad").val(ciudad.id_ciudad);

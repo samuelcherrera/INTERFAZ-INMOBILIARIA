@@ -46,7 +46,7 @@ async function Consultar() {
         $("#txtfecha_registro").val(cliente.fecha_registro);
         $("#dvMensaje").html("");
     } else {
-        $("#dvMensaje").html("<div class='alert alert-warning'>El cliente no está en la base de datos</div>");
+        $("#dvMensaje").html("El cliente no está en la base de datos");
         $("#txtid_cliente").val("");
         $("#txtidentificacion").val("");
         $("#txtnombres").val("");
