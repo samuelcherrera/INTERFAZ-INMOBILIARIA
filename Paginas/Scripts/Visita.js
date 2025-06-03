@@ -111,14 +111,7 @@ async function EliminarDesdeFormulario() {
     }
 }
 
-async function EliminarPorId() {
-    const id = $("#txtid_visita").val();
-
-    if (!id) {
-        alert("Debes ingresar un ID de visita para eliminar.");
-        return;
-    }
-
+async function EliminarPorId(id) {
     if (!confirm("¿Estás seguro de que deseas eliminar esta visita?")) {
         return;
     }
@@ -134,6 +127,7 @@ async function EliminarPorId() {
         alert("Error al eliminar la visita: " + error);
     }
 }
+
 
 class Visita {
     constructor(id_visita, id_propiedad, id_cliente, id_empleado, id_tipo_visita, fecha_hora, comentarios) {
