@@ -190,9 +190,11 @@
     <Content Include="Paginas\Scripts\sedes.js" />
     <Content Include="Paginas\Scripts\Cliente.js" />
     <Content Include="Paginas\Scripts\TipoVisita.js" />
+    <Content Include="Paginas\Scripts\Venta.js" />
     <Content Include="Paginas\Scripts\Visita.js" />
     <Content Include="Paginas\sedes.html" />
     <Content Include="Paginas\TipoVisita.html" />
+    <Content Include="Paginas\Venta.html" />
     <Content Include="Paginas\Visita.html" />
     <Content Include="Scripts\adminlte.js" />
     <Content Include="Scripts\adminlte.min.js" />
