@@ -171,6 +171,7 @@
     <Content Include="Paginas\PaginaBase.html" />
     <Content Include="Paginas\PropiedadModelo.html" />
     <Content Include="Paginas\Propietario.html" />
+    <Content Include="Paginas\proveedor.html" />
     <Content Include="Paginas\Proyecto.html" />
     <Content Include="Paginas\Scripts\Empleado.js" />
     <Content Include="Paginas\Scripts\Ciudad.js" />
@@ -178,6 +179,7 @@
     <Content Include="Paginas\Scripts\Comunes\CRUD.js" />
     <Content Include="Paginas\Scripts\Propiedad.js" />
     <Content Include="Paginas\Scripts\Propietario.js" />
+    <Content Include="Paginas\Scripts\proveedor.js" />
     <Content Include="Paginas\Scripts\Proyecto.js" />
     <Content Include="Paginas\Scripts\Consignacion.js" />
     <Content Include="Paginas\Scripts\DetalleOrden.js" />
