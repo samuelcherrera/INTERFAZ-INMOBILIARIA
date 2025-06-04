@@ -162,6 +162,7 @@
     <Content Include="Paginas\Estilos\webfonts\fa-brands-400.svg" />
     <Content Include="Paginas\Estilos\webfonts\fa-regular-400.svg" />
     <Content Include="Paginas\Estilos\webfonts\fa-solid-900.svg" />
+    <Content Include="Paginas\ordenesCompra.html" />
     <Content Include="Paginas\Propiedad.html" />
     <Content Include="Paginas\Login.html" />
     <Content Include="Paginas\Menu.html" />
@@ -176,6 +177,7 @@
     <Content Include="Paginas\Scripts\Ciudad.js" />
     <Content Include="Paginas\Scripts\Comunes\Comunes.js" />
     <Content Include="Paginas\Scripts\Comunes\CRUD.js" />
+    <Content Include="Paginas\Scripts\OrdenCompra.js" />
     <Content Include="Paginas\Scripts\Propiedad.js" />
     <Content Include="Paginas\Scripts\Propietario.js" />
     <Content Include="Paginas\Scripts\Proyecto.js" />
