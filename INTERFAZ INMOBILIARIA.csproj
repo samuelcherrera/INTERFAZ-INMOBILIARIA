@@ -121,6 +121,7 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Paginas\arriendos.html" />
     <Content Include="Paginas\Ciudad.html" />
     <Content Include="Paginas\Cliente.html" />
     <Content Include="Paginas\Consignacion.html" />
@@ -173,6 +174,7 @@
     <Content Include="Paginas\Propietario.html" />
     <Content Include="Paginas\proveedor.html" />
     <Content Include="Paginas\Proyecto.html" />
+    <Content Include="Paginas\Scripts\arriendo.js" />
     <Content Include="Paginas\Scripts\Empleado.js" />
     <Content Include="Paginas\Scripts\Ciudad.js" />
     <Content Include="Paginas\Scripts\Comunes\Comunes.js" />

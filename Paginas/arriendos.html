@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gestión de Arriendos</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" />
+    <link rel="stylesheet" href="Estilos/css/all.min.css" />
+    <link rel="stylesheet" href="Estilos/adminlte.min.css" />
+    <link rel="stylesheet" href="Estilos/dataTables.bootstrap4.min.css" />
+</head>
+<body class="hold-transition sidebar-mini">
+    <div class="wrapper">
+        <!-- Menú cargado dinámicamente -->
+        <div id="dvMenu"></div>
+
+        <section class="content mt-3">
+            <div class="container-fluid">
+                <div class="card card-primary">
+                    <div class="card-header">
+                        <h3 class="card-title"><i class="fas fa-file-contract"></i> Gestión de Arriendos</h3>
+                    </div>
+                    <form id="frmArriendo">
+                        <div class="card-body">
+                            <div class="form-row">
+                                <div class="form-group col-md-2">
+                                    <label for="txtid_arriendo">ID Arriendo</label>
+                                    <input type="number" class="form-control" id="txtid_arriendo" />
+                                </div>
+                                <div class="form-group col-md-2">
+                                    <label for="txtid_propiedad">ID Propiedad</label>
+                                    <input type="number" class="form-control" id="txtid_propiedad" />
+                                </div>
+                                <div class="form-group col-md-2">
+                                    <label for="txtid_inquilino">ID Inquilino</label>
+                                    <input type="number" class="form-control" id="txtid_inquilino" />
+                                </div>
+                                <div class="form-group col-md-2">
+                                    <label for="txtid_empleado">ID Empleado</label>
+                                    <input type="number" class="form-control" id="txtid_empleado" />
+                                </div>
+                                <div class="form-group col-md-2">
+                                    <label for="txtfecha_inicio">Fecha Inicio</label>
+                                    <input type="date" class="form-control" id="txtfecha_inicio" />
+                                </div>
+                                <div class="form-group col-md-2">
+                                    <label for="txtfecha_fin">Fecha Fin</label>
+                                    <input type="date" class="form-control" id="txtfecha_fin" />
+                                </div>
+                                <div class="form-group col-md-3">
+                                    <label for="txtcanon_mensual">Canon Mensual</label>
+                                    <input type="number" step="0.01" class="form-control" id="txtcanon_mensual" />
+                                </div>
+                                <div class="form-group col-md-3">
+                                    <label for="txtdeposito">Depósito</label>
+                                    <input type="number" step="0.01" class="form-control" id="txtdeposito" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-light">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <button type="button" class="btn btn-success btn-block" onclick="EjecutarComandoArriendo('POST', 'Insertar')">
+                                        <i class="fas fa-plus-circle"></i> Insertar
+                                    </button>
+                                </div>
+                                <div class="col-md-3">
+                                    <button type="button" class="btn btn-warning btn-block" onclick="EjecutarComandoArriendo('PUT', 'Actualizar')">
+                                        <i class="fas fa-edit"></i> Actualizar
+                                    </button>
+                                </div>
+                                <div class="col-md-3">
+                                    <button type="button" class="btn btn-danger btn-block" onclick="EliminarArriendoDesdeFormulario()">
+                                        <i class="fas fa-trash"></i> Eliminar
+                                    </button>
+                                </div>
+                                <div class="col-md-3">
+                                    <button type="button" class="btn btn-info btn-block" onclick="ConsultarArriendo()">
+                                        <i class="fas fa-search"></i> Consultar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="card">
+                    <div class="card-header bg-primary text-white">
+                        <h3 class="card-title"><i class="fas fa-table"></i> Lista de Arriendos</h3>
+                    </div>
+                    <div class="card-body">
+                        <table id="tblArriendos" class="table table-bordered table-hover table-striped" style="width:100%">
+                            <thead>
+                                <tr>
+                                    <th>ID Arriendo</th>
+                                    <th>ID Propiedad</th>
+                                    <th>ID Inquilino</th>
+                                    <th>ID Empleado</th>
+                                    <th>Fecha Inicio</th>
+                                    <th>Fecha Fin</th>
+                                    <th>Canon</th>
+                                    <th>Depósito</th>
+                                    <th>Acciones</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="../Scripts/jquery-3.4.1.min.js"></script>
+    <script src="../Scripts/bootstrap.bundle.min.js"></script>
+    <script src="../Scripts/jquery.dataTables.min.js"></script>
+    <script src="../Scripts/dataTables.bootstrap4.min.js"></script>
+    <script src="Scripts/arriendo.js"></script>
+</body>
+</html>
