@@ -125,7 +125,6 @@
     <Content Include="Paginas\Cliente.html" />
     <Content Include="Paginas\Consignacion.html" />
     <Content Include="Paginas\DetalleOrden.html" />
-    <Content Include="Paginas\Empleado.html" />
     <Content Include="Paginas\EstadoPropiedad.html" />
     <Content Include="Paginas\Estilos\adminlte.css" />
     <Content Include="Paginas\Estilos\adminlte.min.css" />
@@ -176,10 +175,10 @@
     <Content Include="Paginas\Scripts\Comunes\Comunes.js" />
     <Content Include="Paginas\Scripts\Comunes\CRUD.js" />
     <Content Include="Paginas\Scripts\Propiedad.js" />
+    <Content Include="Paginas\Scripts\Propietario.js" />
     <Content Include="Paginas\Scripts\Proyecto.js" />
     <Content Include="Paginas\Scripts\Consignacion.js" />
     <Content Include="Paginas\Scripts\DetalleOrden.js" />
-    <Content Include="Paginas\Scripts\Empleado.js" />
     <Content Include="Paginas\Scripts\EstadoPropiedad.js" />
     <Content Include="Paginas\Scripts\Login.js" />
     <Content Include="Paginas\Scripts\Menu.js" />
