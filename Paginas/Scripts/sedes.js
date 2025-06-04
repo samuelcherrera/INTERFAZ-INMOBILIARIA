@@ -16,7 +16,7 @@ function LlenarTablaSedes() {
                 { data: "nombre" },
                 { data: "telefono" },
                 { data: "direccion" },
-                
+
                 {
                     data: "id_sede",
                     render: function (data) {
