@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Gestión de Propietarios</title>
+    <title>Gestión de Proveedores</title>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" />
     <link rel="stylesheet" href="Estilos/css/all.min.css" />
@@ -18,60 +18,56 @@
             <div class="container-fluid">
                 <div class="card card-primary">
                     <div class="card-header">
-                        <h3 class="card-title"><i class="fas fa-user"></i> Gestión de Propietarios</h3>
+                        <h3 class="card-title"><i class="fas fa-truck"></i> Gestión de Proveedores</h3>
                     </div>
-                    <form id="frmPropietario">
+                    <form id="frmProveedor">
                         <div class="card-body">
-                            <div class="row">
+                            <div class="form-row">
                                 <div class="form-group col-md-2">
-                                    <label for="txtid_persona">ID Persona</label>
-                                    <input type="text" class="form-control" id="txtid_persona" />
-                                </div>
-                                <div class="form-group col-md-3">
-                                    <label for="txtidentificacion">Identificación</label>
-                                    <input type="text" class="form-control" id="txtidentificacion" />
-                                </div>
-                                <div class="form-group col-md-3">
-                                    <label for="txtnombres">Nombres</label>
-                                    <input type="text" class="form-control" id="txtnombres" />
+                                    <label for="txtid_proveedor">ID_Proveedor</label>
+                                    <input type="number" class="form-control" id="txtid_proveedor" />
                                 </div>
                                 <div class="form-group col-md-4">
-                                    <label for="txtapellidos">Apellidos</label>
-                                    <input type="text" class="form-control" id="txtapellidos" />
+                                    <label for="txtnombre_comercial">Nombre Comercial</label>
+                                    <input type="text" class="form-control" id="txtnombre_comercial" />
+                                </div>
+                                <div class="form-group col-md-3">
+                                    <label for="txtnit">NIT</label>
+                                    <input type="text" class="form-control" id="txtnit" />
                                 </div>
                                 <div class="form-group col-md-3">
                                     <label for="txttelefono">Teléfono</label>
                                     <input type="text" class="form-control" id="txttelefono" />
                                 </div>
-                                <div class="form-group col-md-3">
+                                <div class="form-group col-md-6">
                                     <label for="txtemail">Email</label>
                                     <input type="email" class="form-control" id="txtemail" />
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <label for="txtdireccion">Dirección</label>
-                                    <input type="text" class="form-control" id="txtdireccion" />
+                                    <label for="txtid_tipo_proveedor">ID Tipo Proveedor</label>
+                                    <input type="number" class="form-control" id="txtid_tipo_proveedor" />
                                 </div>
                             </div>
                         </div>
                         <div class="card-footer bg-light">
                             <div class="row">
                                 <div class="col-md-3">
-                                    <button type="button" class="btn btn-success btn-block" onclick="EjecutarComando('POST', 'Insertar')">
+                                    <button type="button" class="btn btn-success btn-block" onclick="EjecutarComandoProveedor('POST', 'Insertar')">
                                         <i class="fas fa-plus-circle"></i> Insertar
                                     </button>
                                 </div>
                                 <div class="col-md-3">
-                                    <button type="button" class="btn btn-warning btn-block" onclick="EjecutarComando('PUT', 'Actualizar')">
+                                    <button type="button" class="btn btn-warning btn-block" onclick="EjecutarComandoProveedor('PUT', 'Actualizar')">
                                         <i class="fas fa-edit"></i> Actualizar
                                     </button>
                                 </div>
                                 <div class="col-md-3">
-                                    <button type="button" class="btn btn-danger btn-block" onclick="EliminarDesdeFormulario()">
+                                    <button type="button" class="btn btn-danger btn-block" onclick="EliminarProveedorDesdeFormulario()">
                                         <i class="fas fa-trash"></i> Eliminar
                                     </button>
                                 </div>
                                 <div class="col-md-3">
-                                    <button type="button" class="btn btn-info btn-block" onclick="Consultar()">
+                                    <button type="button" class="btn btn-info btn-block" onclick="ConsultarProveedor()">
                                         <i class="fas fa-search"></i> Consultar
                                     </button>
                                 </div>
@@ -82,19 +78,18 @@
 
                 <div class="card">
                     <div class="card-header bg-primary text-white">
-                        <h3 class="card-title"><i class="fas fa-table"></i> Lista de Propietarios</h3>
+                        <h3 class="card-title"><i class="fas fa-table"></i> Lista de Proveedores</h3>
                     </div>
                     <div class="card-body">
-                        <table id="tblPropietarios" class="table table-bordered table-hover table-striped" style="width:100%">
+                        <table id="tblProveedores" class="table table-bordered table-hover table-striped" style="width:100%">
                             <thead>
                                 <tr>
-                                    <th>ID Persona</th>
-                                    <th>Identificación</th>
-                                    <th>Nombres</th>
-                                    <th>Apellidos</th>
+                                    <th>ID_Proveedor</th>
+                                    <th>Nombre Comercial</th>
+                                    <th>NIT</th>
                                     <th>Teléfono</th>
                                     <th>Email</th>
-                                    <th>Dirección</th>
+                                    <th>ID Tipo</th>
                                     <th>Acciones</th>
                                 </tr>
                             </thead>
@@ -109,7 +104,6 @@
     <script src="../Scripts/bootstrap.bundle.min.js"></script>
     <script src="../Scripts/jquery.dataTables.min.js"></script>
     <script src="../Scripts/dataTables.bootstrap4.min.js"></script>
-    <script src="Scripts/Propietario.js"></script>
+    <script src="Scripts/proveedor.js"></script>
 </body>
 </html>
-

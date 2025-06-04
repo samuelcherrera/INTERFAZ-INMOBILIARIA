@@ -121,6 +121,7 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Paginas\arriendos.html" />
     <Content Include="Paginas\Ciudad.html" />
     <Content Include="Paginas\Cliente.html" />
     <Content Include="Paginas\Consignacion.html" />
@@ -172,7 +173,9 @@
     <Content Include="Paginas\PaginaBase.html" />
     <Content Include="Paginas\PropiedadModelo.html" />
     <Content Include="Paginas\Propietario.html" />
+    <Content Include="Paginas\proveedor.html" />
     <Content Include="Paginas\Proyecto.html" />
+    <Content Include="Paginas\Scripts\arriendo.js" />
     <Content Include="Paginas\Scripts\Empleado.js" />
     <Content Include="Paginas\Scripts\Ciudad.js" />
     <Content Include="Paginas\Scripts\Comunes\Comunes.js" />
@@ -180,6 +183,7 @@
     <Content Include="Paginas\Scripts\OrdenCompra.js" />
     <Content Include="Paginas\Scripts\Propiedad.js" />
     <Content Include="Paginas\Scripts\Propietario.js" />
+    <Content Include="Paginas\Scripts\proveedor.js" />
     <Content Include="Paginas\Scripts\Proyecto.js" />
     <Content Include="Paginas\Scripts\Consignacion.js" />
     <Content Include="Paginas\Scripts\DetalleOrden.js" />
@@ -193,10 +197,12 @@
     <Content Include="Paginas\Scripts\sedes.js" />
     <Content Include="Paginas\Scripts\Cliente.js" />
     <Content Include="Paginas\Scripts\TipoVisita.js" />
+    <Content Include="Paginas\Scripts\tiposproveedor.js" />
     <Content Include="Paginas\Scripts\Venta.js" />
     <Content Include="Paginas\Scripts\Visita.js" />
     <Content Include="Paginas\sedes.html" />
     <Content Include="Paginas\TipoVisita.html" />
+    <Content Include="Paginas\tipo_proveedor.html" />
     <Content Include="Paginas\Venta.html" />
     <Content Include="Paginas\Visita.html" />
     <Content Include="Scripts\adminlte.js" />
